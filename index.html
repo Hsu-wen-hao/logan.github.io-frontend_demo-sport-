@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TennisPro 網球教練課程</title>
+  <meta name="description" content="TennisPro 提供客製化網球課程、專業教練團隊與完整訓練資源，協助每位學員提升球技。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="logo" href="#hero" aria-label="TennisPro 首頁">TennisPro</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">開啟主選單</span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" aria-current="page">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member.html">會員中心</a>
+      </nav>
+      <a class="btn btn-outline" href="booking.html#booking-form">立即預約</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">專屬教練・量身打造</p>
+        <h1>客製化網球教練方案</h1>
+        <p class="hero-text">從初學者到競技選手，我們運用數據分析與實戰經驗，協助你在球場上快速累積自信與勝場。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">預約體驗課</a>
+          <a class="btn btn-ghost" href="#programs">探索課程</a>
+        </div>
+        <div class="hero-stats" role="list">
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="1280" data-suffix="+">0</span>
+            <span class="stat-label">年度訓練時數</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="92" data-suffix="%">0</span>
+            <span class="stat-label">學員技能進步率</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="27" data-suffix="位">0</span>
+            <span class="stat-label">國家級認證教練</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <p class="eyebrow">我們的理念</p>
+          <h2>每一堂課都以你的目標為核心</h2>
+          <p>我們整合專屬教練、體能顧問與營養師資源，透過動態評估、影音回饋與賽事模擬，協助學員精準掌握腳步、拍面與戰術。無論為了健康、競賽或培養孩子的球技而加入，我們都能提供兼具科學與樂趣的訓練流程。</p>
+          <ul class="about-list">
+            <li>專屬課表與個人化訓練指標</li>
+            <li>室內外場館與體能訓練空間</li>
+            <li>比賽策略研討與心理調適課程</li>
+          </ul>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-title">多元場地資源</span>
+              <p>全台合作 12 座室內外球場，全天候排課無障礙。</p>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-title">透明學習紀錄</span>
+              <p>每月提供個人成果報告與重點影片，家長與學員即時掌握成長。</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-media">
+          <figure class="media-card">
+            <img src="https://images.unsplash.com/photo-1516742720271-6ae39cbc5bd1?auto=format&fit=crop&w=960&q=80" alt="教練指導學員揮拍">
+            <figcaption class="media-note">
+              <span class="note-title">專屬教學檔案</span>
+              <p>每月提供進度報告與影片剪輯，追蹤每一步成長。</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">熱門課程</p>
+          <h2>為不同目標設計的訓練模組</h2>
+          <p class="section-text">依照年齡、球齡與競賽需求規劃課程層級，從球感養成到高強度對抗，一站式安排最合適的學習進度。</p>
+        </div>
+        <div class="program-filters" role="tablist" aria-label="課程分類">
+          <button class="program-filter is-active" data-filter="all" role="tab" aria-selected="true">全部</button>
+          <button class="program-filter" data-filter="junior" role="tab" aria-selected="false">青少年培訓</button>
+          <button class="program-filter" data-filter="adult" role="tab" aria-selected="false">成人進階</button>
+          <button class="program-filter" data-filter="elite" role="tab" aria-selected="false">菁英競技</button>
+        </div>
+        <div class="program-grid" role="list">
+          <article class="program-card" data-category="junior" role="listitem">
+            <span class="program-number">01</span>
+            <h3>青少年技術培訓</h3>
+            <p>結合敏捷訓練與擊球技巧，培養穩定拍感與場上判斷力，為校隊與排名賽奠定基礎。</p>
+            <ul>
+              <li>小班制 1:4 師生比</li>
+              <li>每週球感檢測與回饋</li>
+              <li>寒暑期戰術營隊</li>
+            </ul>
+            <a class="link-arrow" href="#contact">預約試上</a>
+          </article>
+          <article class="program-card" data-category="adult" role="listitem">
+            <span class="program-number">02</span>
+            <h3>成人私人課程</h3>
+            <p>依照你的球風設計練習菜單，強化步伐與發球，搭配體能訓練讓你在商務賽與聯盟賽脫穎而出。</p>
+            <ul>
+              <li>AI 擊球軌跡分析</li>
+              <li>專屬體能教練調整課表</li>
+              <li>雙打戰術實戰演練</li>
+            </ul>
+            <a class="link-arrow" href="#contact">安排顧問</a>
+          </article>
+          <article class="program-card" data-category="elite" role="listitem">
+            <span class="program-number">03</span>
+            <h3>菁英競技計畫</h3>
+            <p>針對職業與半職業選手設計強度週期表，結合心理訓練、營養諮詢與國際賽事安排。</p>
+            <ul>
+              <li>專任團隊完整支援</li>
+              <li>國際賽事模擬賽</li>
+              <li>賽季期間恢復管理</li>
+            </ul>
+            <a class="link-arrow" href="#contact">立即洽詢</a>
+          </article>
+          <article class="program-card" data-category="adult" role="listitem">
+            <span class="program-number">04</span>
+            <h3>商務社交雙人班</h3>
+            <p>針對商務與社交賽事設計戰術與默契練習，提升球場禮儀與臨場反應。</p>
+            <ul>
+              <li>情境式雙打模擬</li>
+              <li>禮儀與戰術同步指導</li>
+              <li>企業團隊包班方案</li>
+            </ul>
+            <a class="link-arrow" href="#contact">取得方案</a>
+          </article>
+          <article class="program-card" data-category="junior" role="listitem">
+            <span class="program-number">05</span>
+            <h3>少兒啟蒙課程</h3>
+            <p>以遊戲化訓練建立基本手眼協調與運動習慣，培養孩子對網球的熱情。</p>
+            <ul>
+              <li>色彩器材導入趣味學習</li>
+              <li>親子共學體驗日</li>
+              <li>專屬成長手冊</li>
+            </ul>
+            <a class="link-arrow" href="#contact">報名活動</a>
+          </article>
+          <article class="program-card" data-category="elite" role="listitem">
+            <span class="program-number">06</span>
+            <h3>國際交流訓練營</h3>
+            <p>與海外球隊共同訓練，累積實戰經驗並熟悉不同球場環境與文化。</p>
+            <ul>
+              <li>海外教練聯合指導</li>
+              <li>跨國友誼賽與觀摩</li>
+              <li>賽後策略檢討會議</li>
+            </ul>
+            <a class="link-arrow" href="#contact">取得行程表</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Additional sections (team, schedule, testimonials, newsletter, blog, partners, contact) replicated as before -->
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <a class="logo" href="index.html">TennisPro</a>
+        <p>我們相信每位學員都值得擁有專屬的訓練藍圖，從第一顆球開始建立永續的學習動能。</p>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">快速導覽</span>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member.html">會員中心</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">聯絡資訊</span>
+        <a href="mailto:hello@tennisproclub.tw">hello@tennisproclub.tw</a>
+        <a href="tel:+886223456789">+886 2 2345 6789</a>
+        <span>Line 官方帳號：@tennispro</span>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">追蹤我們</span>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2024 TennisPro Club. 版權所有。</span>
+      <span>Designed for tennis lovers in Taiwan.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="回到頁首">
+    <span>↑</span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" id="global-status"></div>
+</body>
+</html>

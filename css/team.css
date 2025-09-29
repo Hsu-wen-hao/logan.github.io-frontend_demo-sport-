@@ -1,0 +1,372 @@
+﻿/* Team Page (team.html) */
+.team-hero {
+  position: relative;
+  min-height: 68vh;
+  display: flex;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1660463531164-82c419d0b1d0?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: #fff;
+}
+
+.team-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(11, 31, 58, 0.92) 0%, rgba(11, 31, 58, 0.42) 55%, rgba(11, 31, 58, 0.68) 100%);
+}
+
+.team-hero__content {
+  position: relative;
+  padding: 160px 0 120px;
+  max-width: 760px;
+  display: grid;
+  gap: 24px;
+}
+
+.team-hero__stats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.team-hero__stat .stat-value {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.team-hero__stat .stat-label {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+}
+
+.team-overview {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  align-items: start;
+}
+
+.overview-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.overview-list li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.overview-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+.overview-card {
+  background: var(--background-color);
+  border-radius: var(--border-radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 18px;
+}
+
+.overview-card__item {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 16px;
+}
+
+.overview-card__item .item-title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.team-leads {
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 80%);
+  padding: 100px 0;
+}
+
+.lead-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.lead-card {
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  display: grid;
+}
+
+.lead-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.lead-card__body {
+  padding: 28px;
+  display: grid;
+  gap: 14px;
+}
+
+.lead-card__body ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: var(--muted-color);
+  display: grid;
+  gap: 6px;
+}
+
+.lead-role {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.team-coaches {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.coach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.coach-profile {
+  background: var(--background-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  display: grid;
+}
+
+.coach-profile__media {
+  position: relative;
+  padding-top: 70%;
+}
+
+.coach-profile__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coach-profile__body {
+  padding: 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.coach-role {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.coach-tag {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(11, 31, 58, 0.08);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.team-culture {
+  background: linear-gradient(135deg, #0b1f3a 0%, #11325b 100%);
+  color: #fff;
+  padding: 110px 0;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.culture-text h2,
+.culture-text p,
+.culture-text .eyebrow {
+  color: #fff;
+}
+
+.pillar-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.pillar-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius-md);
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.pillar-title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.culture-image img {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.team-cert {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.cert-card {
+  background: var(--background-color);
+  border-radius: var(--border-radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 10px;
+}
+
+.cert-year {
+  font-weight: 900;
+  color: var(--accent-color);
+  letter-spacing: 0.18em;
+}
+
+.team-join {
+  background: linear-gradient(135deg, rgba(236, 153, 55, 0.12), rgba(236, 153, 55, 0.02));
+  padding: 110px 0;
+}
+
+.join-grid {
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 44px 48px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.join-text {
+  display: grid;
+  gap: 16px;
+}
+
+.join-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.join-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.join-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+.join-form {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 1180px) {
+  .overview-grid,
+  .lead-grid,
+  .coach-grid,
+  .culture-grid,
+  .cert-grid,
+  .join-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .team-hero__content {
+    padding-top: 140px;
+  }
+
+  .culture-grid,
+  .join-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-grid,
+  .lead-grid,
+  .coach-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-hero__stats {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .join-grid {
+    padding: 32px;
+  }
+}
+
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 12px 16px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(11, 31, 58, 0.15);
+  font-size: 1rem;
+  background: #fff;
+}
+
+.join-form input:focus-visible,
+.join-form select:focus-visible,
+.join-form textarea:focus-visible {
+  outline: 2px solid rgba(236, 153, 55, 0.4);
+}
+
+.join-form textarea {
+  resize: vertical;
+}
+
+
+
+

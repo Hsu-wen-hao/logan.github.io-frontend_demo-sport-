@@ -1,0 +1,350 @@
+﻿嚜?!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>??蝬脩??游 | TennisPro Club</title>
+  <meta name="description" content="蝺??亥岷 TennisPro Club ?游??蝺湔?畾蛛?敹恍???蝝蒂?閮毀?寞???>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/booking.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="logo" href="index.html" aria-label="TennisPro 擐?">TennisPro</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">??銝駁??/span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">擐?</a>
+        <a href="about.html">???/a>
+        <a href="booking.html" aria-current="page">???游</a>
+        <a href="team.html">?毀??</a>
+        <a href="member.html">?銝剖?</a>
+      </nav>
+      <a class="btn btn-outline" href="#booking-form">??擃?隤?/a>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-hero" id="booking-hero">
+      <div class="container booking-hero__content">
+        <p class="eyebrow">蝺???</p>
+        <h1>??雿?蝬脩??游??撅祆?蝺?/h1>
+        <p class="hero-text">銝郊摰???嚗??啜?蝺渲??挾嚗???Ⅱ隤蒂撖?蝔???霈?撠釣?潭?銝甈⊥??/p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking-form">蝡?亥岷蝛箸?</a>
+          <a class="btn btn-ghost" href="index.html#programs">?亦?隤脩??寞?</a>
+        </div>
+        <div class="hero-stats booking-stats" role="list">
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="12" data-suffix="+">0</span>
+            <span class="stat-label">???湧尹</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="48">0</span>
+            <span class="stat-label">瘥?舫?蝝?畾?/span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="5" data-suffix="??">0</span>
+            <span class="stat-label">摰?蝺???</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-form-section" id="booking-form">
+      <div class="container">
+        <div class="booking-form__header">
+          <p class="eyebrow">??閮剖?</p>
+          <h2>?豢??游??蝺湛?敹恍????挾</h2>
+          <p>憛怠神隞乩?鞈??喳?亥岷餈?蝛箸?嚗????擃?蝺湛??舫?撠犖?銵典?舐窗??/p>
+        </div>
+        <form id="booking-planner" class="booking-form" aria-label="?游????">
+          <div class="booking-form__grid">
+            <div class="form-field">
+              <label for="booking-location">?湧尹</label>
+              <select id="booking-location" name="location" required>
+                <option value="">隢?擗?/option>
+                <option value="taipei">?啣?靽∠儔擗?/option>
+                <option value="taichung">?唬葉瘣脤?擗?/option>
+                <option value="kaohsiung">擃?瞈望絲擗?/option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-court">?憿?</label>
+              <select id="booking-court" name="court" required>
+                <option value="">隢????/option>
+                <option value="indoor-hard">摰文蝖砍??/option>
+                <option value="indoor-clay">摰文蝝???/option>
+                <option value="outdoor-hard">?嗅?蝖砍??/option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-session">隤脩?敶Ｗ?</label>
+              <select id="booking-session" name="session" required>
+                <option value="">?豢?隤脩?敶Ｗ?</option>
+                <option value="private">蝘犖銝撠?</option>
+                <option value="double">?犖?啗?隤?/option>
+                <option value="junior">??撟游???/option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-level">??蝑?</label>
+              <select id="booking-level" name="level" required>
+                <option value="">隢??/option>
+                <option value="beginner">?飛</option>
+                <option value="intermediate">銝剝?</option>
+                <option value="advance">?脤? / 蝡嗆?</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-date">???交?</label>
+              <input id="booking-date" name="date" type="date" required>
+            </div>
+            <div class="form-field">
+              <label for="booking-time">?挾?末</label>
+              <select id="booking-time" name="time">
+                <option value="any">銝?</option>
+                <option value="morning">銝?</option>
+                <option value="afternoon">銝?</option>
+                <option value="evening">??</option>
+              </select>
+            </div>
+          </div>
+          <div class="booking-form__footer">
+            <button class="btn btn-primary" type="submit">?亥岷?舫?蝝?畾?/button>
+            <p class="booking-form__note">?亥岷蝯?靽? 15 ??嚗遣霅啁??喳???蝝??舐窗撠犖???/p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="booking-availability" id="availability">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">?舫?蝝?畾?/p>
+          <h2>?單??湔?梢??挾??蝺渡征瑼?/h2>
+          <p class="section-text">?豢??迭?擗刻?隤脩?嚗????像?亥??望??撱箄降摰?嚗蒂憿舐內?拙???蝺港犖?詻?/p>
+        </div>
+        <div class="slot-toolbar" role="group" aria-label="敹恍???>
+          <button class="slot-filter" type="button" data-offset="0">隞予</button>
+          <button class="slot-filter" type="button" data-offset="1">?予</button>
+          <button class="slot-filter" type="button" data-offset="3">?祇望</button>
+        </div>
+        <div id="slot-summary" class="slot-summary" aria-live="polite"></div>
+        <div id="slot-grid" class="slot-grid" role="list" aria-live="polite"></div>
+        <p id="slot-empty" class="slot-empty" hidden>?桀?撠蝚血?璇辣?征瑼?隢矽?湔??隤脩?敶Ｗ???/p>
+      </div>
+    </section>
+
+    <section class="booking-packages" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">?梢??寞?</p>
+          <h2>?剝?閮毀??啣?蟡?/h2>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <span class="package-label">?犖蝺渡?</span>
+            <h3>Starter Pass</h3>
+            <p class="package-price"><span class="price-number">NT,980</span><span class="price-unit"> / 瘥?</span></p>
+            <ul class="package-list">
+              <li>瘥?1 甈?90 ??蝘犖隤?/li>
+              <li>?游鞎餌?典?銝血?扳?</li>
+              <li>瘥????銵?隡啣??/li>
+            </ul>
+            <a class="btn btn-outline" href="#booking-request">?皜</a>
+          </article>
+          <article class="package-card package-card--featured">
+            <span class="package-label">???脤?</span>
+            <h3>Performance Duo</h3>
+            <p class="package-price"><span class="price-number">NT,680</span><span class="price-unit"> / 瘥?</span></p>
+            <ul class="package-list">
+              <li>瘥?2 甈⊿?鈭箸銵玨蝔?/li>
+              <li>??撠惇?毀???賡“??/li>
+              <li>摮???扳?????脣漲餈質馱</li>
+            </ul>
+            <a class="btn btn-primary" href="#booking-request">??隤芣?</a>
+          </article>
+          <article class="package-card">
+            <span class="package-label">蝡嗆??</span>
+            <h3>Elite Match Pack</h3>
+            <p class="package-price"><span class="price-number">NT,200</span><span class="price-unit"> / 瘥?</span></p>
+            <ul class="package-list">
+              <li>瘥?3 甈∪??+ ?毀?玨</li>
+              <li>???券?瘥魚蝑?舀</li>
+              <li>撠惇?Ｗ儔??擗矽?渲???/li>
+            </ul>
+            <a class="btn btn-outline" href="#booking-request">蝝Ｗ?摰Ｚˊ?寞?</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-steps" id="steps">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">??瘚?</p>
+          <h2>?郊摰???銝行?啗?蝔</h2>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <span class="step-index">01</span>
+            <h3>蝺?憛怠神銵典</h3>
+            <p>?豢??湧尹?玨蝔??交?嚗????撠?啗??毀鞈???/p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">02</span>
+            <h3>撠犖蝣箄?</h3>
+            <p>??憿批???30 ???扯蝜思?蝣箄?蝝啁?銝血???蝝?/p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">03</span>
+            <h3>隞狡?</h3>
+            <p>?舀蝺???渡?撣喉?摰?敺??摮?鈭?????/p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">04</span>
+            <h3>?啣蝺渡?</h3>
+            <p>?勗敺?毀?交?嚗玨敺?甇交?靘?暺?擖?/p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">撣貉???</p>
+          <h2>??瘚???瘨蝑?Q&A</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>??敺?銋??嗅蝣箄?嚗?/span></button>
+            <div class="faq-content" hidden>
+              <p>?漱銵典敺?30 ???扳??梢?蝝“???餉店??LINE ??蝣箄?嚗蒂?潛Ⅱ隤?撖摮縑??鈭???/p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>?臭誑?冽??寞???瘨?嚗?/span></button>
+            <div class="faq-content" hidden>
+              <p>隤脩?????24 撠??臬?鞎餅??甈∴?12 撠??批?瘨?? 30% ?游??蝺港??祥??/p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>憒???????蝺湛?</span></button>
+            <div class="faq-content" hidden>
+              <p>?刻玨蝔耦撘?雿??嚗?澆?閮餅????毀憪???蝺湧?瘙????芸??箔?摰???????/p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>??靘????嚗?/span></button>
+            <div class="faq-content" hidden>
+              <p>??擗函????祥蝺渡????箸??嚗??臬??寧????啁??蒂?望?蝺游??抵矽?渡?撘萄???/p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-cta" id="booking-request">
+      <div class="container cta-grid">
+        <div class="cta-text">
+          <p class="eyebrow">???</p>
+          <h2>?曆??啁??單?畾蛛???鞈??勗?鈭箏??拙???/h2>
+          <p>??靘?擃??氬?璆剔?????鞈賢閮?摰Ｚˊ?獢????瘙?12 撠??批?閬?/p>
+          <div class="cta-info">
+            <div>
+              <span class="item-label">撠?</span>
+              <a href="tel:+886223456789">+886 2 2345 6789</a>
+            </div>
+            <div>
+              <span class="item-label">LINE</span>
+              <span>@tennispro</span>
+            </div>
+            <div>
+              <span class="item-label">Email</span>
+              <a href="mailto:booking@tennisproclub.tw">booking@tennisproclub.tw</a>
+            </div>
+          </div>
+        </div>
+        <form class="booking-request-form" aria-label="撠犖???">
+          <div class="form-field">
+            <label for="request-name">憪?</label>
+            <input id="request-name" name="name" type="text" required placeholder="隢撓?亙???>
+          </div>
+          <div class="form-field">
+            <label for="request-phone">?舐窗?餉店</label>
+            <input id="request-phone" name="phone" type="tel" required placeholder="0912-345-678">
+          </div>
+          <div class="form-field">
+            <label for="request-prefer">?末?挾</label>
+            <select id="request-prefer" name="prefer" required>
+              <option value="">隢??/option>
+              <option value="weekday-morning">撟單銝?</option>
+              <option value="weekday-evening">撟單??</option>
+              <option value="weekend">?望?典予</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="request-message">?瘙?閮?/label>
+            <textarea id="request-message" name="message" rows="3" placeholder="靘?嚗?鈭箏?蝺氬?璆剜暑???岫??></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">?漱?瘙?/button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <a class="logo" href="index.html">TennisPro</a>
+        <p>?靽⊥?雿飛?⊿?澆???撠惇??蝺渲???敺洵銝憿???撱箇?瘞貊??飛蝧??賬?/p>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">敹恍?閬?/span>
+        <a href="index.html">擐?</a>
+        <a href="about.html">???/a>
+        <a href="booking.html">???游</a>
+        <a href="team.html">?毀??</a>
+        <a href="member.html">?銝剖?</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">?舐窗鞈?</span>
+        <a href="mailto:hello@tennisproclub.tw">hello@tennisproclub.tw</a>
+        <a href="tel:+886223456789">+886 2 2345 6789</a>
+        <span>Line 摰撣唾?嚗tennispro</span>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">餈質馱??/span>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>穢 2024 TennisPro Club. ?????/span>
+      <span>Designed for tennis lovers in Taiwan.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="???">
+    <span>??/span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" id="global-status"></div>
+</body>
+</html>
+

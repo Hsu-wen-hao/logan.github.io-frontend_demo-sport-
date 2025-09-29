@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>預約球場與教練 | TennisPro Club</title>
+  <meta name="description" content="線上預約 TennisPro Club 球場與教練時段，快速完成預定並掌握訓練安排。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/booking.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="logo" href="index.html" aria-label="TennisPro 首頁">TennisPro</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">開啟主選單</span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html" aria-current="page">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member.html">會員中心</a>
+      </nav>
+      <a class="btn btn-outline" href="#booking-form">預約體驗課</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-hero" id="booking-hero">
+      <div class="container booking-hero__content">
+        <p class="eyebrow">線上預約</p>
+        <h1>為你找到最適合的場地與教練</h1>
+        <p class="hero-text">三個步驟完成預約，選擇場館、教練與時段，我們即時確認並寄送課程提醒，讓你把心力留給每一次揮拍。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking-form">立即查詢空檔</a>
+          <a class="btn btn-ghost" href="index.html#programs">查看課程介紹</a>
+        </div>
+        <div class="hero-stats booking-stats" role="list">
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="12" data-suffix="+">0</span>
+            <span class="stat-label">營運據點</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="48">0</span>
+            <span class="stat-label">每日可預約時段</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value" data-count="5" data-suffix="項">0</span>
+            <span class="stat-label">完整線上流程</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-form-section" id="booking-form">
+      <div class="container">
+        <div class="booking-form__header">
+          <p class="eyebrow">預約設定</p>
+          <h2>選定場地與教練，快速查到可預約時段</h2>
+          <p>填寫以下資訊即可查詢近期空檔，若需要協助安排場地或團體課程，也歡迎透過專人諮詢表單與我們聯繫。</p>
+        </div>
+        <form id="booking-planner" class="booking-form" aria-label="場地預約規劃">
+          <div class="booking-form__grid">
+            <div class="form-field">
+              <label for="booking-location">場館</label>
+              <select id="booking-location" name="location" required>
+                <option value="">請選擇場館</option>
+                <option value="taipei">台北信義會館</option>
+                <option value="taichung">台中洲際會館</option>
+                <option value="kaohsiung">高雄濱海會館</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-court">場地類型</label>
+              <select id="booking-court" name="court" required>
+                <option value="">請選擇場地</option>
+                <option value="indoor-hard">室內硬地球場</option>
+                <option value="indoor-clay">室內紅土球場</option>
+                <option value="outdoor-hard">戶外硬地球場</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-session">課程型態</label>
+              <select id="booking-session" name="session" required>
+                <option value="">請選擇課程型態</option>
+                <option value="private">私人一對一</option>
+                <option value="double">雙人對練</option>
+                <option value="junior">青少年團體</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-level">程度需求</label>
+              <select id="booking-level" name="level" required>
+                <option value="">請選擇程度</option>
+                <option value="beginner">初學</option>
+                <option value="intermediate">中階</option>
+                <option value="advance">進階 / 競賽</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="booking-date">預約日期</label>
+              <input id="booking-date" name="date" type="date" required>
+            </div>
+            <div class="form-field">
+              <label for="booking-time">時段偏好</label>
+              <select id="booking-time" name="time">
+                <option value="any">不限</option>
+                <option value="morning">上午</option>
+                <option value="afternoon">下午</option>
+                <option value="evening">晚上</option>
+              </select>
+            </div>
+          </div>
+          <div class="booking-form__footer">
+            <button class="btn btn-primary" type="submit">查詢可預約時段</button>
+            <p class="booking-form__note">預約結果保留 15 分鐘，若需協助請直接聯繫專線或加入 LINE 官方帳號。</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="booking-availability" id="availability">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">時段查詢</p>
+          <h2>即時掌握最新空檔與教練資訊</h2>
+          <p class="section-text">依照你選擇的場館與課程，推薦平日與週末的理想時段，並顯示可預約的教練與費用。</p>
+        </div>
+        <div class="slot-toolbar" role="group" aria-label="快速選擇日期">
+          <button class="slot-filter" type="button" data-offset="0">今天</button>
+          <button class="slot-filter" type="button" data-offset="1">明天</button>
+          <button class="slot-filter" type="button" data-offset="3">本週末</button>
+        </div>
+        <div id="slot-summary" class="slot-summary" aria-live="polite"></div>
+        <div id="slot-grid" class="slot-grid" role="list" aria-live="polite"></div>
+        <p id="slot-empty" class="slot-empty" hidden>目前尚無符合條件的空檔，請調整日期或課程設定再試一次。</p>
+      </div>
+    </section>
+
+    <section class="booking-packages" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">熱門方案</p>
+          <h2>從啟蒙到競賽的訓練方案</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <span class="package-label">成人入門</span>
+            <h3>Starter Pass</h3>
+            <p class="package-price"><span class="price-number">NT$1,980</span><span class="price-unit"> / 每月</span></p>
+            <ul class="package-list">
+              <li>每週 1 堂 90 分鐘私人課</li>
+              <li>含場地費與教練講義</li>
+              <li>每月提供一次動作分析報告</li>
+            </ul>
+            <a class="btn btn-outline" href="#booking-request">加入洽詢清單</a>
+          </article>
+          <article class="package-card package-card--featured">
+            <span class="package-label">進階提升</span>
+            <h3>Performance Duo</h3>
+            <p class="package-price"><span class="price-number">NT$4,680</span><span class="price-unit"> / 每月</span></p>
+            <ul class="package-list">
+              <li>每週 2 次雙人戰術課</li>
+              <li>專屬教練團隊與賽事規劃</li>
+              <li>數據化表現追蹤與回饋</li>
+            </ul>
+            <a class="btn btn-primary" href="#booking-request">立即諮詢</a>
+          </article>
+          <article class="package-card">
+            <span class="package-label">競賽集訓</span>
+            <h3>Elite Match Pack</h3>
+            <p class="package-price"><span class="price-number">NT$9,200</span><span class="price-unit"> / 每季</span></p>
+            <ul class="package-list">
+              <li>每週 3 堂場地訓練 + 體能課</li>
+              <li>賽前策略與影片分析</li>
+              <li>專屬肌力恢復與營養建議</li>
+            </ul>
+            <a class="btn btn-outline" href="#booking-request">索取客製方案</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-steps" id="steps">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">預約流程</p>
+          <h2>四步完成預約並收到上課提醒</h2>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <span class="step-index">01</span>
+            <h3>線上填寫需求</h3>
+            <p>挑選場館與課程型態，系統自動比對最適合的教練與時段。</p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">02</span>
+            <h3>專人電話確認</h3>
+            <p>顧問於 30 分鐘內聯繫，確認細節並保留預約名額。</p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">03</span>
+            <h3>完成付款與通知</h3>
+            <p>支援線上與現場刷卡，完成後寄出電子課程行事曆。</p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">04</span>
+            <h3>抵達場館上課</h3>
+            <p>到場後由教練帶領暖身，課後提供重點回饋與練習建議。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">常見問題</p>
+          <h2>預約流程與取消政策 Q&A</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>送出表單後多久會收到確認？</span></button>
+            <div class="faq-content" hidden>
+              <p>提交表單後 30 分鐘內，客服顧問會以電話或 LINE 與你聯繫，確認細節後寄出電子郵件通知。</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>取消或改期需要注意什麼？</span></button>
+            <div class="faq-content" hidden>
+              <p>課程開始前 24 小時可免費改期一次；12 小時內取消將酌收 30% 場地與教練保留費用。</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>如何指定想要的教練？</span></button>
+            <div class="faq-content" hidden>
+              <p>在備註欄填寫希望的教練姓名或需求，我們會視教練排程協助安排或推薦合適人選。</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span>場地是否提供設備租借？</span></button>
+            <div class="faq-content" hidden>
+              <p>各場館備有基本球具與發球機，可以於現場租借；如需指定品牌也可提前與教練討論。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-cta" id="booking-request">
+      <div class="container cta-grid">
+        <div class="cta-text">
+          <p class="eyebrow">專人協助</p>
+          <h2>讓顧問依你的時段規劃客製方案</h2>
+          <p>我們提供體驗課、企業包場與賽事培訓等客製服務，留下需求後 12 小時內回覆。</p>
+          <div class="cta-info">
+            <div>
+              <span class="item-label">專線</span>
+              <a href="tel:+886223456789">+886 2 2345 6789</a>
+            </div>
+            <div>
+              <span class="item-label">LINE</span>
+              <span>@tennispro</span>
+            </div>
+            <div>
+              <span class="item-label">Email</span>
+              <a href="mailto:booking@tennisproclub.tw">booking@tennisproclub.tw</a>
+            </div>
+          </div>
+        </div>
+        <form class="booking-request-form" aria-label="專人協助預約">
+          <div class="form-field">
+            <label for="request-name">姓名</label>
+            <input id="request-name" name="name" type="text" required placeholder="請輸入姓名">
+          </div>
+          <div class="form-field">
+            <label for="request-phone">聯絡電話</label>
+            <input id="request-phone" name="phone" type="tel" required placeholder="0912-345-678">
+          </div>
+          <div class="form-field">
+            <label for="request-prefer">偏好時段</label>
+            <select id="request-prefer" name="prefer" required>
+              <option value="">請選擇</option>
+              <option value="weekday-morning">平日早上</option>
+              <option value="weekday-evening">平日晚上</option>
+              <option value="weekend">週末全天</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="request-message">需求備註</label>
+            <textarea id="request-message" name="message" rows="3" placeholder="例如：團體包場 / 兒童課程 / 試課時間"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">送出需求</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <a class="logo" href="index.html">TennisPro</a>
+        <p>我們相信每位學員都值得擁有專屬教練，從第一顆球開始打造長期且樂在其中的學習旅程。</p>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">快速連結</span>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member.html">會員中心</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">聯絡資訊</span>
+        <a href="mailto:hello@tennisproclub.tw">hello@tennisproclub.tw</a>
+        <a href="tel:+886223456789">+886 2 2345 6789</a>
+        <span>LINE 官方帳號：@tennispro</span>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">追蹤我們</span>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2024 TennisPro Club. 版權所有。</span>
+      <span>Designed for tennis lovers in Taiwan.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="回到頂端">
+    <span>頂</span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" id="global-status"></div>
+</body>
+</html>

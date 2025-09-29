@@ -1,0 +1,339 @@
+﻿嚜?!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>?毀??隞晶 | TennisPro Club</title>
+  <meta name="description" content="隤? TennisPro Club ??璆剜?蝺渲??舀??嚗?閫??蝺渡?敹菔?隤????>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/team.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="logo" href="index.html" aria-label="TennisPro 擐?">TennisPro</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">??銝駁??/span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">擐?</a>
+        <a href="about.html">???/a>
+        <a href="booking.html">???游</a>
+        <a href="team.html" aria-current="page">?毀??</a>
+        <a href="member.html">?銝剖?</a>
+      </nav>
+      <a class="btn btn-outline" href="booking.html#booking-form">??擃?隤?/a>
+    </div>
+  </header>
+
+  <main>
+    <section class="team-hero" id="hero">
+      <div class="team-hero__overlay"></div>
+      <div class="container team-hero__content">
+        <p class="eyebrow">THE TEAM</p>
+        <h1>?撘瑟?蝺湧摰對??芯?韏唬?瘥??游???/h1>
+        <p>???????毀???賡“???霅瑁?敹?隢桀?撣恬????渡?閮毀?舀蝟餌絞嚗?瘥?摮詨?質?函??港????芯縑???氬?/p>
+        <div class="team-hero__stats" role="list">
+          <div class="team-hero__stat" role="listitem">
+            <span class="stat-value" data-count="27" data-suffix="雿?>0</span>
+            <span class="stat-label">?刻?毀</span>
+          </div>
+          <div class="team-hero__stat" role="listitem">
+            <span class="stat-value" data-count="18" data-suffix="撘?>0</span>
+            <span class="stat-label">??撠平霅</span>
+          </div>
+          <div class="team-hero__stat" role="listitem">
+            <span class="stat-value" data-count="12" data-suffix="??>0</span>
+            <span class="stat-label">瘚瑕?鞈賭?撣園?蝬?</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-overview" id="overview">
+      <div class="container overview-grid">
+        <div class="overview-text">
+          <p class="eyebrow">???艙</p>
+          <h2>蝘飛??蝺?? 鈭箸批??芯撈</h2>
+          <p>?靽⊥?雿飛?⊿?澆???撠惇摮貊??????誑??銵??賬????乓?憭扳?望???蝺湔?蝔?敺洵銝?玨撱箇?靽∪??敞蝛?????嚗???鞈賭?璅⊥?????撟怠雿????雿喳?瑯?/p>
+          <ul class="overview-list">
+            <li>ITF?SPTA 隤??毀??摰嗥?鋆?勗?暺?</li>
+            <li>瘥???????券脖耨嚗雁?????啗隅??/li>
+            <li>頝券???摰塚???撣怒儔?亙葦???垣??雿?/li>
+          </ul>
+        </div>
+        <div class="overview-card">
+          <span class="badge">Highlights</span>
+          <div class="overview-card__item">
+            <span class="item-title">?毀?寡銝剖?</span>
+            <p>撖衣??脤??寡?隤脩?嚗Ⅱ靽?蝺游?鞈芾??飛銝?湔扼?/p>
+          </div>
+          <div class="overview-card__item">
+            <span class="item-title">?豢?????</span>
+            <p>瘥瘥魚?????郊隡蕭頩歹?????舫???璅?/p>
+          </div>
+          <div class="overview-card__item">
+            <span class="item-title">??鈭斗?</span>
+            <p>???噫瘣脯?祉雯?飛?Ｗ?雿?摰?瘚瑕?蝘餃閮毀??/p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-leads" id="lead-coaches">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">???毀</p>
+          <h2>撣園????脩??敹?/h2>
+        </div>
+        <div class="lead-grid">
+          <article class="lead-card">
+            <img src="https://images.unsplash.com/photo-1634840542403-1a9b1067aaa0?auto=format&fit=crop&w=960&q=80" alt="蝮賣?蝺湧?⊥?">
+            <div class="lead-card__body">
+              <h3>?單⊥? Ella</h3>
+              <p class="lead-role">蝮賣?蝺?/ ITF A 蝝?/p>
+              <p>??憭璆剝???瘥魚蝑???矽?氬撟游?摰嗡誨銵券?撣園?蝬?嚗???撠僑?寡??啗璆剛魚鈭??冽雿???/p>
+              <ul>
+                <li>撣園?摮詨憭活?粹脣???魚??撘?/li>
+                <li>撠嚗銵??戊?桅脫蝭憟魚????/li>
+                <li>隤?嚗葉??/ ?望? / 镼輻??</li>
+              </ul>
+            </div>
+          </article>
+          <article class="lead-card">
+            <img src="https://images.unsplash.com/photo-1641543678408-f0479974f438?auto=format&fit=crop&w=960&q=80" alt="?銵蜇???蝡">
+            <div class="lead-card__body">
+              <h3>????Lucas</h3>
+              <p class="lead-role">?銵蜇??/ ??ATP ?? 210</p>
+              <p>撠移?潛??翰????蝺湛?撠楚餈渲魚蝬?頧??箄玨蝔誑?豢?????飛蝑?嚗??拚??蝭?奎??芸??/p>
+              <ul>
+                <li>2023 隡平?航魚蝮賣?蝺湛?撣園?憟芸?</li>
+                <li>撠嚗摮?銵???憟翰?餉???/li>
+                <li>隤?嚗葉??/ ?望?</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-coaches" id="coaches">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">?詨??</p>
+          <h2>?毀??游???/h2>
+          <p class="section-text">瘥??毀???折?飛閰??????扯??荔?銝西??舀??撖???嚗Ⅱ靽飛?∪?銵??刻??Ｗ儔銝???敺像銵～?/p>
+        </div>
+        <div class="coach-grid">
+          <article class="coach-profile">
+            <div class="coach-profile__media"><img src="https://images.unsplash.com/photo-1641543602857-8e431372087a?auto=format&fit=crop&w=640&q=80" alt="?毀暺掖憍?></div>
+            <div class="coach-profile__body">
+              <h3>暺掖憍?Mia</h3>
+              <p class="coach-role">擃?儔?交?蝺?/p>
+              <p>撠?潸???蝛拙?摨西?蝺湛?銝脫鞈賢??梯澈?魚敺敺拇?蝔???豢?撱箇??????脣摰喋?/p>
+              <span class="coach-tag">NSCA CSCS / NASM CES</span>
+            </div>
+          </article>
+          <article class="coach-profile">
+            <div class="coach-profile__media"><img src="https://images.unsplash.com/photo-1661606215936-2c57d654338b?auto=format&fit=crop&w=640&q=80" alt="?毀??璉?></div>
+            <div class="coach-profile__body">
+              <h3>??璉?Ethan</h3>
+              <p class="coach-role">?啗???撣?/p>
+              <p>?敶梁??芾摩????閬箏???毀?飛?∪摰?鞈賜??伐??臬????豢?憭扯??/p>
+              <span class="coach-tag">Data Analyst / Dartfish Specialist</span>
+            </div>
+          </article>
+          <article class="coach-profile">
+            <div class="coach-profile__media"><img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=640&q=80" alt="?毀?唾瘨?></div>
+            <div class="coach-profile__body">
+              <h3>?唾瘨?Nadia</h3>
+              <p class="coach-role">??撟湔?蝺?/p>
+              <p>??券??脣?隤脩???摮拙?撠雯???閎嚗蒂?振?瑕????飛蝧脣漲??/p>
+              <span class="coach-tag">ITF Level 2 / AFAA Youth Fitness</span>
+            </div>
+          </article>
+          <article class="coach-profile">
+            <div class="coach-profile__media"><img src="https://images.unsplash.com/photo-1660463529569-17f8c4d16fbe?auto=format&fit=crop&w=640&q=80" alt="?毀??摰?></div>
+            <div class="coach-profile__body">
+              <h3>??摰?Oscar</h3>
+              <p class="coach-role">?犖?脤??毀</p>
+              <p>蝯???鈭箏ㄚ??????閮剛?擃??玨蝔?撘瑕??潛??郊隡??銝??芯縑?奎?剖???/p>
+              <span class="coach-tag">PTR Professional</span>
+            </div>
+          </article>
+          <article class="coach-profile">
+            <div class="coach-profile__media"><img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=640&q=80" alt="?毀撘菔??></div>
+            <div class="coach-profile__body">
+              <h3>撘菔??Ariel</h3>
+              <p class="coach-role">敹?隢桀?撣?/p>
+              <p>?摮詨?券?撘萄?瘥魚銝剔雁??瘜刻???蝛拙?嚗身閮魚??撘??澆閮毀??/p>
+              <span class="coach-tag">隢桀?敹?撣?/ Sport Psychology</span>
+            </div>
+          </article>
+          <article class="coach-profile">
+            <div class="coach-profile__media"><img src="https://images.unsplash.com/photo-1660463532854-f887f2a6c674?auto=format&fit=crop&w=640&q=80" alt="?毀雿?亙"></div>
+            <div class="coach-profile__body">
+              <h3>雿?亙 Kenji</h3>
+              <p class="coach-role">???銵“??/p>
+              <p>靘?交蝬脩???嚗?瘜冽?單郊蝝啁??銵?撅嚗??葆靘???蝺渲?暺?/p>
+              <span class="coach-tag">JTA 隤??毀</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-culture" id="culture">
+      <div class="container culture-grid">
+        <div class="culture-text">
+          <p class="eyebrow">閮毀??</p>
+          <h2>?之閮毀?舀嚗?嫣??舀?雿??</h2>
+          <p>????玨蝔??箏??敹????勗?鞎砍?蝯蕭頩文飛?⊿脩???摰?瑼Ｚ???蝺游?雿?頝券???嚗Ⅱ靽??冽???畾菟?賜敺??隤踵??氬?/p>
+          <div class="pillar-list">
+            <div class="pillar-item">
+              <span class="pillar-title">?銵?Technical</span>
+              <p>瘥?隤脩????Ｕ郊隡??啗? KPI嚗?蝺湔?靘???唾?敶勗?????/p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-title">擃 Physical</span>
+              <p>擃?毀靘?鞈賜?閬??閮毀嚗蒂餈質馱?∠??敺拇?璅?/p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-title">敹? Mental</span>
+              <p>敹?隢桀?撣怠??拙遣蝡魚??撘???隤輻?嚗?雿?鞈賢???/p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-title">蝑 Tactical</span>
+              <p>瘥魚蝯?敺??喲脰????降嚗摰?銝?挾蝑?毀蝧?暺?/p>
+            </div>
+          </div>
+        </div>
+        <div class="culture-image">
+          <img src="https://images.unsplash.com/photo-1727837350740-a98cd7a7b70e?auto=format&fit=crop&w=960&q=80" alt="?毀閮??啗?蝑">
+        </div>
+      </div>
+    </section>
+
+    <section class="team-cert" id="certifications">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">撠平隤?</p>
+          <h2>???頠?撠平?賢?</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <span class="cert-year">2024</span>
+            <h3>ITF Coaching Conference</h3>
+            <p>?????銝僑???澈??撟渲?蝺渡頂蝯梯??豢??????/p>
+          </article>
+          <article class="cert-card">
+            <span class="cert-year">2023</span>
+            <h3>USPTA Elite Professional</h3>
+            <p>鈭??毀?? Elite 隤?嚗項??銵??質??飛敹?蝑???/p>
+          </article>
+          <article class="cert-card">
+            <span class="cert-year">2022</span>
+            <h3>??銝剖???憭乩撈</h3>
+            <p>??摰園???蝺港葉敹偷閮?雿??恬?撱箇??豢??寡?鞈??曹澈撟喳??/p>
+          </article>
+          <article class="cert-card">
+            <span class="cert-year">2021</span>
+            <h3>Sports Science Lab</h3>
+            <p>????蝘飛撖阡?摰歹?撠???????葫閰佗???蝎暹?閮毀閰摯??/p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-join" id="join">
+      <div class="container join-grid">
+        <div class="join-text">
+          <p class="eyebrow">???/p>
+          <h2>?單??箏???銝?∪?嚗?/h2>
+          <p>??蝥???蝺氬??賢葦???葦?恥???∴??芾?雿?雯?蒂??撠平?勗膨嚗迭餈??悼甇瑯?/p>
+          <ul class="join-list">
+            <li>摰?寡??嗅漲??典?撣恍隡?/li>
+            <li>瘥僑??瘚瑕?閫?抵??脖耨鋆</li>
+            <li>敶扳??剛??芣艇??嗅漲</li>
+          </ul>
+        </div>
+        <form class="join-form" aria-label="??撅交風銵典">
+          <div class="form-field">
+            <label for="join-name">憪?</label>
+            <input id="join-name" name="name" type="text" required placeholder="隢撓?亙???>
+          </div>
+          <div class="form-field">
+            <label for="join-email">?餃??萎辣</label>
+            <input id="join-email" name="email" type="email" required placeholder="name@example.com">
+          </div>
+          <div class="form-field">
+            <label for="join-role">???瑚?</label>
+            <select id="join-role" name="role" required>
+              <option value="">隢??/option>
+              <option value="coach">?毀 Coach</option>
+              <option value="fitness">擃?毀 Strength & Conditioning</option>
+              <option value="analysis">?豢???撣?Analyst</option>
+              <option value="support">銵 / 摰Ｘ?</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="join-message">鋆?隤芣?</label>
+            <textarea id="join-message" name="message" rows="3" placeholder="蝪∟膩?飛蝬?????></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">?撅交風</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <a class="logo" href="index.html">TennisPro</a>
+        <p>?靽⊥?雿飛?⊿?澆???撠惇??蝺渲???敺洵銝憿???撱箇?瘞貊??飛蝧??賬?/p>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">敹恍?閬?/span>
+        <a href="index.html">擐?</a>
+        <a href="about.html">???/a>
+        <a href="booking.html">???游</a>
+        <a href="team.html">?毀??</a>
+        <a href="member.html">?銝剖?</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">?舐窗鞈?</span>
+        <a href="mailto:hello@tennisproclub.tw">hello@tennisproclub.tw</a>
+        <a href="tel:+886223456789">+886 2 2345 6789</a>
+        <span>Line 摰撣唾?嚗tennispro</span>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">餈質馱??/span>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>穢 2024 TennisPro Club. ?????/span>
+      <span>Designed for tennis lovers in Taiwan.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="???">
+    <span>??/span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" id="global-status"></div>
+</body>
+</html>
+

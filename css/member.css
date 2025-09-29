@@ -1,0 +1,387 @@
+﻿/* Member Dashboard (member.html) */
+.member-hero {
+  background: linear-gradient(135deg, #0b1f3a 0%, #193a68 100%);
+  color: #fff;
+  padding: 64px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: end;
+}
+
+.hero-profile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 18px 40px rgba(11, 31, 58, 0.4);
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(236, 153, 55, 0.15);
+  color: #ffd7a4;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.hero-info h1 {
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.member-level {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+}
+
+.hero-info p {
+  color: rgba(255, 255, 255, 0.82);
+  margin: 8px 0 14px;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.member-stats {
+  background: #fff;
+  padding: 40px 0;
+}
+
+.member-stats .stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: var(--background-color);
+  border-radius: var(--border-radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 10px;
+}
+
+.stat-card .stat-label {
+  color: var(--muted-color);
+  font-weight: 600;
+}
+
+.stat-card .stat-value {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.stat-progress {
+  position: relative;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(11, 31, 58, 0.15);
+  overflow: hidden;
+}
+
+.stat-progress span {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #ec9937 0%, #f5ba6e 100%);
+}
+
+.stat-meta {
+  color: var(--muted-color);
+  font-size: 0.92rem;
+}
+
+.member-body {
+  background: #f8f9fc;
+  padding: 40px 0 100px;
+}
+
+.body-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.panel {
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 26px;
+  display: grid;
+  gap: 18px;
+}
+
+.panel.stretch {
+  grid-column: span 2;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panel-head h2 {
+  font-size: 1.3rem;
+}
+
+.panel-sub {
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}
+
+.schedule-list {
+  display: grid;
+  gap: 16px;
+}
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+}
+
+.schedule-time {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.schedule-time .day {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.schedule-info h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.schedule-info p {
+  margin-bottom: 4px;
+}
+
+.coach-label {
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 0.92rem;
+}
+
+.target-list {
+  display: grid;
+  gap: 18px;
+}
+
+.target-item {
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  border-radius: var(--border-radius-md);
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.target-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-weight: 600;
+}
+
+.target-progress {
+  position: relative;
+  height: 8px;
+  background: rgba(11, 31, 58, 0.08);
+  border-radius: 999px;
+}
+
+.target-progress span {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #4c9cff 0%, #1f75f0 100%);
+}
+
+.target-value {
+  position: absolute;
+  right: 8px;
+  top: -24px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.coach-notes {
+  display: grid;
+  gap: 16px;
+}
+
+.note-item {
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  border-radius: var(--border-radius-md);
+  padding: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.note-date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted-color);
+}
+
+.inbox-list {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.inbox-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+}
+
+.inbox-list .badge {
+  background: rgba(236, 153, 55, 0.15);
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.inbox-list time {
+  color: var(--muted-color);
+  font-size: 0.85rem;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.history-card {
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  border-radius: var(--border-radius-md);
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.history-card ul {
+  list-style: disc;
+  margin-left: 18px;
+  color: var(--muted-color);
+  display: grid;
+  gap: 6px;
+}
+
+@media (max-width: 1180px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .member-stats .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel.stretch {
+    grid-column: initial;
+  }
+
+  .history-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-avatar {
+    width: 88px;
+    height: 88px;
+  }
+
+  .member-stats .stat-grid,
+  .schedule-item,
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hero-actions {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 520px) {
+  .member-hero {
+    padding: 48px 0;
+  }
+
+  .stat-card {
+    padding: 24px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+}

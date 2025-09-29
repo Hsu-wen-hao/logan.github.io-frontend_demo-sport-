@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>會員中心 | TennisPro Club</title>
+  <meta name="description" content="網球會員專屬儀表板：掌握課程、成績與訊息，快速安排下一次訓練。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/member.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="logo" href="index.html" aria-label="TennisPro 首頁">TennisPro</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">開啟主選單</span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member.html" aria-current="page">會員中心</a>
+      </nav>
+      <a class="btn btn-outline" href="booking.html#booking-form">預約下一堂課</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="member-hero" id="overview">
+      <div class="container hero-grid">
+        <div class="hero-profile">
+          <div class="hero-avatar">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=320&q=80" alt="會員頭像">
+          </div>
+          <div class="hero-info">
+            <span class="member-tag">白金會員</span>
+            <h1>林芮琪 <span class="member-level">NTRP 4.0</span></h1>
+            <p>加入 3 年｜喜歡進攻型打法，近期備戰企業聯賽與混雙賽事。</p>
+            <div class="hero-meta">
+              <span>專屬教練：Lucas 王立凱</span>
+              <span>本月訓練時數：12 / 20 小時</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary">新建預約</button>
+          <button class="btn btn-outline">下載訓練報告</button>
+          <button class="btn btn-ghost">分享成就</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="member-stats" aria-label="關鍵統計">
+      <div class="container stat-grid">
+        <article class="stat-card">
+          <span class="stat-label">本季體能完成度</span>
+          <span class="stat-value" data-count="82" data-suffix="%">82%</span>
+          <div class="stat-progress"><span style="width:82%"></span></div>
+          <p>已完成 9/11 次指定體能課。</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">比賽勝率</span>
+          <span class="stat-value" data-count="68" data-suffix="%">68%</span>
+          <div class="stat-meta">今年 22 場 / 15 勝</div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">下一場賽事</span>
+          <span class="stat-value">4 月 12 日</span>
+          <div class="stat-meta">企業聯賽 第 6 輪</div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">未讀訊息</span>
+          <span class="stat-value" data-count="5">5</span>
+          <div class="stat-meta">教練留言 3 ・客服通知 2</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="member-body">
+      <div class="container body-grid">
+        <div class="panel stretch" aria-labelledby="schedule-title">
+          <div class="panel-head">
+            <h2 id="schedule-title">本週課程安排</h2>
+            <button class="link-arrow" type="button">管理課表</button>
+          </div>
+          <div class="schedule-list">
+            <article class="schedule-item">
+              <div class="schedule-time">
+                <span class="day">週二</span>
+                <span class="time">19:00-20:30</span>
+              </div>
+              <div class="schedule-info">
+                <h3>進攻節奏與發球策略</h3>
+                <p>場館：台北信義館 2 號硬地</p>
+                <span class="coach-label">教練 Lucas・體能 Mia</span>
+              </div>
+              <button class="btn btn-outline">查看重點</button>
+            </article>
+            <article class="schedule-item">
+              <div class="schedule-time">
+                <span class="day">週四</span>
+                <span class="time">07:30-09:00</span>
+              </div>
+              <div class="schedule-info">
+                <h3>晨間體能與步伐加速</h3>
+                <p>場館：台北信義館 室內紅土</p>
+                <span class="coach-label">體能教練 Mia</span>
+              </div>
+              <button class="btn btn-outline">調整時間</button>
+            </article>
+            <article class="schedule-item">
+              <div class="schedule-time">
+                <span class="day">週六</span>
+                <span class="time">14:00-16:00</span>
+              </div>
+              <div class="schedule-info">
+                <h3>混雙對戰模擬</h3>
+                <p>場館：台中洲際館 戶外硬地</p>
+                <span class="coach-label">教練 Lucas＋團隊分析師 Ethan</span>
+              </div>
+              <button class="btn btn-primary">準備事項</button>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" aria-labelledby="targets-title">
+          <div class="panel-head">
+            <h2 id="targets-title">訓練目標進度</h2>
+            <span class="panel-sub">第一季｜更新於 3/25</span>
+          </div>
+          <div class="target-list">
+            <div class="target-item">
+              <div class="target-meta">
+                <h3>發球第一球進球率</h3>
+                <span>目標 72%</span>
+              </div>
+              <div class="target-progress" aria-label="目前達成率 65%">
+                <span style="width:65%"></span>
+                <span class="target-value">65%</span>
+              </div>
+            </div>
+            <div class="target-item">
+              <div class="target-meta">
+                <h3>雙打網前成功率</h3>
+                <span>目標 60%</span>
+              </div>
+              <div class="target-progress" aria-label="目前達成率 58%">
+                <span style="width:58%"></span>
+                <span class="target-value">58%</span>
+              </div>
+            </div>
+            <div class="target-item">
+              <div class="target-meta">
+                <h3>核心穩定度評分</h3>
+                <span>目標 Level 4</span>
+              </div>
+              <div class="target-progress" aria-label="目前達成率 80%">
+                <span style="width:80%"></span>
+                <span class="target-value">Level 3+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" aria-labelledby="notes-title">
+          <div class="panel-head">
+            <h2 id="notes-title">教練留言</h2>
+            <button class="btn btn-outline" type="button">查看全部</button>
+          </div>
+          <div class="coach-notes">
+            <article class="note-item">
+              <span class="note-date">3 月 24 日</span>
+              <h3>雙發球局保持積極站位</h3>
+              <p>第二發球時可嘗試加強內角與上旋變化，並提醒搭檔提前上網製造壓力。</p>
+            </article>
+            <article class="note-item">
+              <span class="note-date">3 月 20 日</span>
+              <h3>賽前暖身流程完成度</h3>
+              <p>循序伸展與動態啟動完成度 100%，請持續維持 10 分鐘腳步梯練習。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" aria-labelledby="messages-title">
+          <div class="panel-head">
+            <h2 id="messages-title">訊息與提醒</h2>
+            <span class="panel-sub">最新 24 小時</span>
+          </div>
+          <ul class="inbox-list">
+            <li>
+              <span class="badge">TEAM</span>
+              <div>
+                <h3>混雙戰術影片已上傳</h3>
+                <p>請於週五前完成收看並回覆心得，影片長度約 12 分鐘。</p>
+              </div>
+              <time>2 小時前</time>
+            </li>
+            <li>
+              <span class="badge">SYSTEM</span>
+              <div>
+                <h3>續約提醒</h3>
+                <p>白金會員方案將於 5/1 到期，提前續約享有 10% 優惠。</p>
+              </div>
+              <time>6 小時前</time>
+            </li>
+            <li>
+              <span class="badge">COACH</span>
+              <div>
+                <h3>週四課程提前至 7:00</h3>
+                <p>因場地安排調整，請提前 15 分鐘到場熱身。</p>
+              </div>
+              <time>昨日下午</time>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel stretch" aria-labelledby="history-title">
+          <div class="panel-head">
+            <h2 id="history-title">歷程與報表</h2>
+          </div>
+          <div class="history-grid">
+            <article class="history-card">
+              <h3>近期訓練紀錄</h3>
+              <ul>
+                <li>03/22｜雙發球局實戰演練・完成度 94%</li>
+                <li>03/18｜場地對抗賽・贏得 3-2</li>
+                <li>03/15｜體能評估 Level 3 → 3.5</li>
+              </ul>
+              <button class="link-arrow" type="button">查看詳細</button>
+            </article>
+            <article class="history-card">
+              <h3>繳費與帳務</h3>
+              <ul>
+                <li>03/08｜白金方案月費 NT$5,680｜已付款</li>
+                <li>02/10｜課後影片加值 NT$1,200｜已付款</li>
+                <li>02/01｜雙人集訓營 NT$3,600｜待付款</li>
+              </ul>
+              <button class="btn btn-outline" type="button">前往帳務中心</button>
+            </article>
+            <article class="history-card">
+              <h3>社群與活動</h3>
+              <ul>
+                <li>報名 4/20 混雙友誼賽｜尚餘 12 名額</li>
+                <li>參加 03/30 體能講座「賽後恢復」</li>
+              </ul>
+              <button class="btn btn-primary" type="button">加入活動</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <a class="logo" href="index.html">TennisPro</a>
+        <p>我們相信每位學員都值得擁有專屬的訓練藍圖，從第一顆球開始建立永續的學習動能。</p>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">快速導覽</span>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member.html">會員中心</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">聯絡資訊</span>
+        <a href="mailto:hello@tennisproclub.tw">hello@tennisproclub.tw</a>
+        <a href="tel:+886223456789">+886 2 2345 6789</a>
+        <span>Line 官方帳號：@tennispro</span>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">追蹤我們</span>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2024 TennisPro Club. 版權所有。</span>
+      <span>Designed for tennis lovers in Taiwan.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="回到頁首">
+    <span>↑</span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" id="global-status"></div>
+</body>
+</html>

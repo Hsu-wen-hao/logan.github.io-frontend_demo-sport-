@@ -250,6 +250,10 @@
   color: #fff;
 }
 
+.booking-steps .section-head .eyebrow {
+  margin-bottom: 5px;
+}
+
 .step-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

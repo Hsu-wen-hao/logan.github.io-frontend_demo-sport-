@@ -126,6 +126,10 @@
   margin-bottom: 18px;
 }
 
+.auth-footer-cta .btn {
+  margin-top: 3px;
+}
+
 @media (max-width: 960px) {
   .auth-hero {
     padding: 100px 0;

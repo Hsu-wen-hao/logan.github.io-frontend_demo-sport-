@@ -384,6 +384,15 @@
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
+      const fakeDateSeeds = {
+        weekday: new Date(2024, 6, 18),
+        weekend: new Date(2024, 6, 20)
+      };
+
+      Object.keys(fakeDateSeeds).forEach(function (key) {
+        fakeDateSeeds[key].setHours(0, 0, 0, 0);
+      });
+
       function formatInputDate(date) {
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -394,6 +403,14 @@
       function formatDisplayDate(date) {
         const days = ["週日", "週一", "週二", "週三", "週四", "週五", "週六"];
         return `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, "0")}/${String(date.getDate()).padStart(2, "0")} (${days[date.getDay()]})`;
+      }
+
+      function getFakeDateLabel(date) {
+        if (!(date instanceof Date) || Number.isNaN(date.getTime())) {
+          return formatDisplayDate(fakeDateSeeds.weekday);
+        }
+        const seed = isWeekend(date) ? fakeDateSeeds.weekend : fakeDateSeeds.weekday;
+        return formatDisplayDate(seed);
       }
 
       function matchesTimePreference(pref, time) {
@@ -493,10 +510,11 @@
         if (slotEmpty) {
           slotEmpty.hidden = true;
         }
+        const fakeDateLabel = getFakeDateLabel(payload.date);
         if (slotSummary) {
           const locationText = locationLabels[payload.location] || "";
           const courtText = courtLabels[payload.court] || "";
-          slotSummary.textContent = `${locationText}・${courtText}｜${formatDisplayDate(payload.date)} 找到 ${slots.length} 個推薦時段`;
+          slotSummary.textContent = `${locationText}・${courtText}｜${fakeDateLabel} 找到 ${slots.length} 個推薦時段`;
         }
         const fragment = document.createDocumentFragment();
         slots.forEach(function (slot) {
@@ -512,7 +530,7 @@
           const noteText = slot.notes ? `<span>貼心服務：${slot.notes}</span>` : "";
           card.innerHTML = `
             <div class="slot-card__header">
-              <span>${slot.start} - ${slot.end}</span>
+              <span>${fakeDateLabel} ${slot.start} - ${slot.end}</span>
               <span class="badge">剩餘 ${slot.spots} 席</span>
             </div>
             <div class="slot-card__meta">

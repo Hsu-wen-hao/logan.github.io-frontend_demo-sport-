@@ -130,6 +130,10 @@
   gap: 22px;
 }
 
+.slot-grid.is-sample {
+  padding-top: 12px;
+}
+
 .slot-card {
   background: #fff;
   border-radius: var(--border-radius-md);
@@ -138,6 +142,7 @@
   display: grid;
   gap: 12px;
   border: 1px solid rgba(11, 31, 58, 0.05);
+  position: relative;
 }
 
 .slot-card__header {
@@ -157,6 +162,30 @@
 
 .slot-card button {
   justify-self: flex-start;
+}
+
+.slot-summary.is-sample {
+  color: var(--muted-color);
+  font-weight: 500;
+}
+
+.slot-card.is-sample {
+  border: 1px dashed rgba(11, 31, 58, 0.24);
+  box-shadow: none;
+}
+
+.slot-card.is-sample::before {
+  content: "示意";
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(236, 153, 55, 0.16);
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .slot-empty {

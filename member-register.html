@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>加入會員 | 樂活網球 Club</title>
+  <meta name="description" content="註冊成為 樂活網球 Club 會員，享受專屬教練支援、課程預約管理與多元訓練資源。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body class="auth-page">
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="logo" href="index.html" aria-label="樂活網球 首頁">樂活網球</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">開啟主選單</span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member-login.html">會員登入</a>
+        <a href="member.html">會員中心</a>
+      </nav>
+      <a class="btn btn-outline" href="member-login.html">會員登入</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="auth-hero">
+      <div class="container">
+        <div class="auth-copy">
+          <p class="eyebrow">Join 樂活網球</p>
+          <h1>加入會員，打造你的專屬網球訓練旅程</h1>
+          <p>透過完整的會員系統管理課程、追蹤訓練數據並獲得教練團隊的專業建議。立即註冊即可開啟專屬進步路線。</p>
+        </div>
+        <div class="auth-card" aria-labelledby="register-title">
+          <div>
+            <h2 id="register-title">建立會員帳號</h2>
+            <p>填寫以下資訊，我們將在 24 小時內完成帳號啟用並寄送歡迎信。</p>
+          </div>
+          <form class="auth-form" aria-describedby="register-title">
+            <div class="form-field">
+              <label for="register-name">姓名</label>
+              <input id="register-name" name="name" type="text" placeholder="請輸入姓名" required>
+            </div>
+            <div class="form-field">
+              <label for="register-email">電子郵件</label>
+              <input id="register-email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-field">
+              <label for="register-phone">連絡電話</label>
+              <input id="register-phone" name="phone" type="tel" placeholder="0912 345 678" required>
+            </div>
+            <div class="form-field">
+              <label for="register-plan">首選方案</label>
+              <select id="register-plan" name="plan" required>
+                <option value="">請選擇方案</option>
+                <option value="starter">成人入門｜Starter Pass</option>
+                <option value="junior">青少年競技｜Junior Elite</option>
+                <option value="premium">企業尊榮｜Corporate Plus</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="register-password">設定密碼</label>
+              <input id="register-password" name="password" type="password" placeholder="至少 8 碼英數組合" required>
+            </div>
+            <div class="form-field">
+              <label for="register-confirm-password">確認密碼</label>
+              <input id="register-confirm-password" name="confirm-password" type="password" placeholder="再次輸入密碼" required>
+            </div>
+            <div class="form-field" style="align-items: start;">
+              <label class="sr-only" for="register-consent">同意條款</label>
+              <div style="display:flex; gap:10px; align-items:flex-start;">
+                <input id="register-consent" type="checkbox" required>
+                <span class="auth-meta">我已閱讀並同意 <a href="#">會員使用條款</a> 與 <a href="#">個資保護聲明</a>。</span>
+              </div>
+            </div>
+            <div class="auth-actions">
+              <button class="btn btn-primary" type="submit">送出註冊</button>
+              <a class="btn btn-ghost" href="member-login.html">已有帳號？登入</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-benefits" aria-labelledby="register-benefit-title">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 42px;">
+          <p class="eyebrow">會員優勢</p>
+          <h2 id="register-benefit-title">註冊後立即擁有的專屬服務</h2>
+          <p class="section-text">全方位整合線上預約、訓練紀錄與社群資源，協助你有效率地達成訓練目標。</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <h3>專屬教練顧問</h3>
+            <p>加入後即刻匹配專屬教練顧問，定期檢視訓練計畫與進度。</p>
+          </article>
+          <article class="benefit-card">
+            <h3>多場館自由切換</h3>
+            <p>跨城市場館自由預約，行程變動也能快速調整訓練安排。</p>
+          </article>
+          <article class="benefit-card">
+            <h3>會員活動優先權</h3>
+            <p>優先參加球友交流賽、專題講座與國際觀賽團，拓展網球人脈。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-footer-cta" aria-labelledby="register-cta-title">
+      <div class="container">
+        <h2 id="register-cta-title">已經完成註冊？</h2>
+        <p>立即登入會員中心安排下一堂課程，並查看最新的教練回饋。</p>
+        <a class="btn btn-primary" href="member-login.html">前往登入</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <a class="logo" href="index.html">樂活網球</a>
+        <p>我們相信每位學員都值得擁有專屬的訓練藍圖，從第一顆球開始建立永續的學習動能。</p>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">快速導覽</span>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="booking.html">預約場地</a>
+        <a href="team.html">教練團隊</a>
+        <a href="member-login.html">會員登入</a>
+        <a href="member.html">會員中心</a>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">聯絡資訊</span>
+        <a href="mailto:hello@tennisproclub.tw">hello@tennisproclub.tw</a>
+        <a href="tel:+886223456789">+886 2 2345 6789</a>
+        <span>Line 官方帳號：@tennispro</span>
+      </div>
+      <div class="footer-block">
+        <span class="footer-title">追蹤我們</span>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2024 樂活網球 Club. 版權所有。</span>
+      <span>Designed for tennis lovers in Taiwan.</span>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="回到頁首">
+    <span>↑</span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" id="global-status"></div>
+</body>
+</html>

@@ -384,6 +384,15 @@
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
+      const fakeDateSeeds = {
+        weekday: new Date(2024, 6, 18),
+        weekend: new Date(2024, 6, 20)
+      };
+
+      Object.keys(fakeDateSeeds).forEach(function (key) {
+        fakeDateSeeds[key].setHours(0, 0, 0, 0);
+      });
+
       function formatInputDate(date) {
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -394,6 +403,14 @@
       function formatDisplayDate(date) {
         const days = ["週日", "週一", "週二", "週三", "週四", "週五", "週六"];
         return `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, "0")}/${String(date.getDate()).padStart(2, "0")} (${days[date.getDay()]})`;
+      }
+
+      function getFakeDateLabel(date) {
+        if (!(date instanceof Date) || Number.isNaN(date.getTime())) {
+          return formatDisplayDate(fakeDateSeeds.weekday);
+        }
+        const seed = isWeekend(date) ? fakeDateSeeds.weekend : fakeDateSeeds.weekday;
+        return formatDisplayDate(seed);
       }
 
       function matchesTimePreference(pref, time) {
@@ -476,12 +493,16 @@
 
       function renderSlots(payload) {
         if (!slotGrid) return;
+        const isSample = Boolean(payload && payload.isSample);
         const slots = computeSlots(payload);
+        const hasSlots = slots.length > 0;
+        slotGrid.classList.toggle("is-sample", isSample && hasSlots);
         slotGrid.innerHTML = "";
         if (slotSummary) {
           slotSummary.textContent = "";
+          slotSummary.classList.remove("is-sample");
         }
-        if (!slots.length) {
+        if (!hasSlots) {
           if (slotEmpty) {
             const locationText = locationLabels[payload.location] || "所選場館";
             const courtText = courtLabels[payload.court] || "指定球場";
@@ -493,10 +514,13 @@
         if (slotEmpty) {
           slotEmpty.hidden = true;
         }
+        const fakeDateLabel = getFakeDateLabel(payload.date);
         if (slotSummary) {
           const locationText = locationLabels[payload.location] || "";
           const courtText = courtLabels[payload.court] || "";
-          slotSummary.textContent = `${locationText}・${courtText}｜${formatDisplayDate(payload.date)} 找到 ${slots.length} 個推薦時段`;
+          const summaryPrefix = isSample ? "示意：" : "";
+          slotSummary.textContent = `${summaryPrefix}${locationText}・${courtText}｜${fakeDateLabel} 找到 ${slots.length} 個推薦時段`;
+          slotSummary.classList.toggle("is-sample", isSample);
         }
         const fragment = document.createDocumentFragment();
         slots.forEach(function (slot) {
@@ -507,12 +531,12 @@
           const levelText = slot.levels.map(function (level) {
             return levelLabels[level] || level;
           }).join(" / ");
-          const locationText = locationLabels[payload.location] || "TennisPro 場館";
+          const locationText = locationLabels[payload.location] || "樂活網球 場館";
           const courtText = courtLabels[payload.court] || "專屬球場";
           const noteText = slot.notes ? `<span>貼心服務：${slot.notes}</span>` : "";
           card.innerHTML = `
             <div class="slot-card__header">
-              <span>${slot.start} - ${slot.end}</span>
+              <span>${fakeDateLabel} ${slot.start} - ${slot.end}</span>
               <span class="badge">剩餘 ${slot.spots} 席</span>
             </div>
             <div class="slot-card__meta">
@@ -524,6 +548,9 @@
             </div>
             <button class="btn btn-outline" type="button">預約這個時段</button>
           `;
+          if (isSample) {
+            card.classList.add("is-sample");
+          }
           fragment.appendChild(card);
         });
         slotGrid.appendChild(fragment);
@@ -575,6 +602,22 @@
           }
         });
       });
+
+      function renderSampleSlots() {
+        if (!slotGrid) return;
+        const samplePayload = {
+          location: "taipei",
+          court: "indoor-hard",
+          session: "private",
+          level: "intermediate",
+          timePreference: "any",
+          date: new Date(fakeDateSeeds.weekday.getTime()),
+          isSample: true
+        };
+        renderSlots(samplePayload);
+      }
+
+      renderSampleSlots();
 
       bookingForm.addEventListener("submit", function (event) {
         event.preventDefault();

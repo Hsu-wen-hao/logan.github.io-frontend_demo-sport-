@@ -507,7 +507,7 @@
           const levelText = slot.levels.map(function (level) {
             return levelLabels[level] || level;
           }).join(" / ");
-          const locationText = locationLabels[payload.location] || "TennisPro 場館";
+          const locationText = locationLabels[payload.location] || "樂活網球 場館";
           const courtText = courtLabels[payload.court] || "專屬球場";
           const noteText = slot.notes ? `<span>貼心服務：${slot.notes}</span>` : "";
           card.innerHTML = `

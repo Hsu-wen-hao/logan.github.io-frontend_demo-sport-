@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>?毀??隞晶 | TennisPro Club</title>
-  <meta name="description" content="隤? TennisPro Club ??璆剜?蝺渲??舀??嚗?閫??蝺渡?敹菔?隤????>
+  <title>?毀??隞晶 | 樂活網球 Club</title>
+  <meta name="description" content="隤? 樂活網球 Club ??璆剜?蝺渲??舀??嚗?閫??蝺渡?敹菔?隤????>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
   <header class="site-header" id="top">
     <div class="container header-bar">
-      <a class="logo" href="index.html" aria-label="TennisPro 擐?">TennisPro</a>
+      <a class="logo" href="index.html" aria-label="樂活網球 擐?">樂活網球</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
@@ -297,7 +297,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-block">
-        <a class="logo" href="index.html">TennisPro</a>
+        <a class="logo" href="index.html">樂活網球</a>
         <p>?靽⊥?雿飛?⊿?澆???撠惇??蝺渲???敺洵銝憿???撱箇?瘞貊??飛蝧??賬?/p>
       </div>
       <div class="footer-block">
@@ -324,7 +324,7 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>穢 2024 TennisPro Club. ?????/span>
+      <span>穢 2024 樂活網球 Club. ?????/span>
       <span>Designed for tennis lovers in Taiwan.</span>
     </div>
   </footer>
